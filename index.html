@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+    <!-- linke file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <i id="btnM" class="fa-solid fa-bars"></i>
+            <a href="#" class="logo">NUR<span>Fatima</span></a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                
+                
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home">
+        <h1 style="font-size: 100px;" >ŇØØŘ ₣ΔŦƗΜΔ</h1>
+    </div>
+
+
+    <script>
+        let btnM = document.getElementById('btnM');
+        let navLinks = document.querySelector('.nav-links');
+
+        btnM.onclick = () =>{
+            btnM.classList.toggle('fa-times')
+            navLinks.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
